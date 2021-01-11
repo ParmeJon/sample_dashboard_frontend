@@ -4,7 +4,7 @@ import homeIcon from '../images/home.svg'
 import pieChart from '../images/pie-chart.svg'
 import '../styles/nav.css'
 
-const Navbar = (props) => {
+const Navbar = () => {
     return (
       <nav className="nav">
         <ul className="nav-list">
