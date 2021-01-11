@@ -1,0 +1,36 @@
+.nav {
+    width: 200px;
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+} 
+
+.nav-list > li {
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.link-container {
+    display: flex;
+}
+
+.home-icon {
+    margin-right: 10px;
+}
+
+.nav-list > li > a {
+    text-align: center;
+    line-height: 24px;
+    vertical-align: middle;
+}

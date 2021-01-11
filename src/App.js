@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import CardDashboard from './components/CardDashboard';
+import AnalyticsBoard from './components/AnalyticsBoard';
+import Header from './components/Header';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 
 function App() {
+  const [accountsList, setAccountsList] = useState([])
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    const getLink = `${process.env.REACT_APP_API_URI}accounts`;
+    setLoading(true);
+    fetch(getLink)
+      .then((res) => {
+        return res.json()
+      }).then((json) => {
+        setAccountsList(json);
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Route exact path="/analytics">
+              <AnalyticsBoard accounts={accountsList} loading={loading}/>
+            </Route>
+            <Route path="/">
+              <CardDashboard accounts={accountsList} loading={loading}/>
+            </Route>
+          </Switch>
+        </BrowserRouter> 
     </div>
   );
 }
