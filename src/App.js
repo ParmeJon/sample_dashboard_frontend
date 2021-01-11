@@ -4,8 +4,6 @@ import AnalyticsBoard from './components/AnalyticsBoard';
 import Header from './components/Header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import './App.css';
-
 function App() {
   const [accountsList, setAccountsList] = useState([])
   const [loading, setLoading] = useState(false)

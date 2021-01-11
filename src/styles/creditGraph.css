@@ -1,0 +1,21 @@
+.credit-graph-card {
+    height: fit-content;
+    width: fit-content;
+    padding: 25px;
+    min-width: 250px;
+    margin: 20px;
+    border-radius: 1rem;
+    background: white;
+    box-shadow:  0 8px 20px 2px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.credit-graph-card > h2 {
+    color: #0e1111;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.scores-title {
+    font-style: none;
+    font-weight: 100;
+}
