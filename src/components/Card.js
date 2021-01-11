@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import calculateRating from '../helper/calculateRating'
 import '../styles/card.css'
 
 const Card = ({account}) => {
@@ -9,12 +10,17 @@ const Card = ({account}) => {
         name_last, 
         picture, 
         address, 
+        credit,
         balance, 
         comments, 
         email, 
         employer, 
         phone, 
-        tags } = account
+        tags 
+    } = account
+
+    const mortgageRating = calculateRating(credit, balance)
+
     return (
       <div className="card">
         <div className="card-avatar">
@@ -51,6 +57,14 @@ const Card = ({account}) => {
             <div id="balance">Balance</div>
             <div className="balance" aria-labelledby="balance">
               {balance}
+            </div>
+            <div id="credit">Credit</div>
+            <div className="credit" aria-labelledby="credit">
+              {credit}
+            </div>
+            <div id="rating">Mortgage Rating</div>
+            <div className="rating" aria-labelledby="rating">
+              {mortgageRating}
             </div>
           </div>
 

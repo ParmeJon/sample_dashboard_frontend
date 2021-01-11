@@ -44,7 +44,7 @@
     font-size: 0.75rem;
 }
 
-#email, #phone, #address, #balance {
+#email, #phone, #address, #balance, #rating, #credit {
     font-weight: 600;
     margin-top: 2px;
 }
