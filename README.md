@@ -23,3 +23,9 @@ Demo: https://sample-dashboard-frontend.herokuapp.com/
     ```
     npm run start
     ```
+
+## Nice to Have (WIP)
+- [ ] Pagination
+- [ ] Authentication
+- [ ] Lazy Loading
+- [ ] Search Filter

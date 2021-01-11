@@ -8,14 +8,15 @@
 }
 
 .main-header > h1 {
-    color: white;
+    color: #F2c894;
     margin: 0;
     margin-left: 55px;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: 50px;
 }
 
 .title-board {
+    color: white;
     font-weight: 100;
 }

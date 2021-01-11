@@ -1,8 +1,24 @@
 .accounts-wrapper {
     height: 100%;
     width: 100%;
-    margin: 5px;
+    margin: 10px 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.accounts-title {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    width: 500px;
+    margin: 0;
+    margin-left: 55px;
+}
+
+.accounts-description {
+    color: white;
+    font-size: .8rem;
+    font-style: italic;
+    margin-left: 55px;
 }
