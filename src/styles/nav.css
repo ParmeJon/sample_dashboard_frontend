@@ -34,3 +34,7 @@
     line-height: 24px;
     vertical-align: middle;
 }
+
+.nav-list > li > a:hover {
+    color: black;
+}

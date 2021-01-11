@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import homeIcon from '../images/home.svg'
+import pieChart from '../images/pie-chart.svg'
 import '../styles/nav.css'
 
 const Navbar = (props) => {
@@ -17,7 +18,12 @@ const Navbar = (props) => {
           </li>
           <li>|</li>
           <li>
-            <Link to="/analytics">Analytics</Link>
+            <Link to="/analytics">
+              <div className="link-container">
+                <img className="home-icon" src={pieChart} alt="Pie Chart Icon"/>
+                Analytics 
+              </div>
+            </Link>
           </li>
         </ul>
       </nav>

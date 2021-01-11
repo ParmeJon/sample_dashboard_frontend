@@ -1,6 +1,69 @@
 .card {
-    width: 200px;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 30% auto;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    word-wrap: break-word;
+    border-radius: 0.5rem;
+    background: white;
+    box-shadow:  0 8px 20px 2px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+
+    will-change: transform;
+    transition: transform 0.25s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.card:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    box-shadow:  0 8px 20px 2px rgba(0,0,0,0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.avatar {
+    height: auto;
+    max-height: 100px;
+    width: auto;
+    max-width: 100px;
+}
+
+.img-loading {
+    display: none;
+}
+
+.name {
+    font-size: 1.25rem;
+}
+
+.employer {
+    font-weight: 600;
+    color: #0288D1;
+}
+
+.card-about {
+    margin-top: 10px;
+    font-size: 0.75rem;
+}
+
+#email, #phone, #address, #balance {
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.comments {
+    margin-top: 10px;
+    font-size: 0.75rem;
+}
+
+.tags {
+    background-color: #0288D1;
+    text-align: center;
+    font-size: .5rem;
+    display: inline-block;
+    border: none;
+    color: white;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 16px;
+    word-wrap: initial;
 }
