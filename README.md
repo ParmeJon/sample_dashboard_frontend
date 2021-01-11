@@ -3,6 +3,8 @@
 This is a React application made to provide a user interface for sample dashboard data.
 It also uses the [recharts](https://recharts.org/en-US/) react library for it's data visual representation.
 
+Demo: https://sample-dashboard-frontend.herokuapp.com/ 
+
 ## Setup and Run
 
 1. Clone Repository
