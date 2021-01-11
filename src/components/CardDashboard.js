@@ -4,7 +4,6 @@ import Card from './Card';
 import '../styles/cardDashboard.css'
 
 const CardDashboard = ({accounts, loading}) => {
-    console.log('accounts api', accounts)
     return (
         <main>
             <div className="accounts-wrapper">

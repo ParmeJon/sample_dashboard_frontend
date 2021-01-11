@@ -13,7 +13,6 @@ import calculateRating from "../helper/calculateRating";
 import '../styles/mortgageGraph.css'
 
 const MortgageGraph = ({accounts}) => {
-    console.log('ingraph', accounts)
     const accountsWithRating = accounts.map((account) => {
       account.mortgageRating = calculateRating(account.credit, account.balance);
       return account;

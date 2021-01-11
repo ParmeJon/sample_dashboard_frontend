@@ -13,6 +13,7 @@ function App() {
     setLoading(true);
     fetch(getLink)
       .then((res) => {
+        console.log('fetched data')
         return res.json()
       }).then((json) => {
         setAccountsList(json);

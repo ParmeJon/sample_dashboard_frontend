@@ -5,7 +5,6 @@ import CreditGraph from './CreditGraph';
 import '../styles/analyticsBoard.css'
 
 const AnalyticsBoard = ({accounts, loading}) => {
-
     return (
       <main>
         <div className="analytics-wrapper">
