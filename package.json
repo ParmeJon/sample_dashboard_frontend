@@ -1,4 +1,5 @@
 {
+  "home": "https://sample-dashboard-frontend.herokuapp.com/",
   "name": "sample-dashboard-frontend",
   "version": "0.1.0",
   "private": true,
