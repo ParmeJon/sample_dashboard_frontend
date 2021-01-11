@@ -8,7 +8,7 @@ const CardDashboard = ({accounts, loading}) => {
     return (
         <main>
             <div className="accounts-wrapper">
-            { accounts ? accounts.slice(0,20).map((account) => <Card key={account._id} account={account}></Card>) : 'No Accounts'}
+            { accounts && !loading ? accounts.map((account) => <Card key={account._id} account={account}></Card>) : 'No Accounts'}
             </div>
         </main>
     )

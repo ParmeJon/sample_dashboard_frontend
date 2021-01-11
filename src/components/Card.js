@@ -21,6 +21,15 @@ const Card = ({account}) => {
 
     const mortgageRating = calculateRating(credit, balance)
 
+    let ratingColor
+    if (mortgageRating === 'EXCELLENT' || mortgageRating === 'GOOD') {
+        ratingColor = 'green'
+    } else if (mortgageRating === 'OKAY') {
+        ratingColor = 'yellow'
+    } else {
+        ratingColor = 'red'
+    }
+
     return (
       <div className="card">
         <div className="card-avatar">
@@ -63,7 +72,7 @@ const Card = ({account}) => {
               {credit}
             </div>
             <div id="rating">Mortgage Rating</div>
-            <div className="rating" aria-labelledby="rating">
+            <div className={`rating ${ratingColor}`} aria-labelledby="rating">
               {mortgageRating}
             </div>
           </div>

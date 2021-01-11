@@ -49,6 +49,22 @@
     margin-top: 2px;
 }
 
+.rating {
+    font-weight: bold;
+}
+
+.rating.green {
+    color: green;
+}
+
+.rating.yellow {
+    color: #CCCC00;
+}
+
+.rating.red {
+    color: red;
+}
+
 .comments {
     margin-top: 10px;
     font-size: 0.75rem;
