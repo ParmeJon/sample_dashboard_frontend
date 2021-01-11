@@ -48,38 +48,38 @@ const Card = ({account}) => {
         </div>
         <div className="card-details">
           <div className="name">{`${name_first} ${name_last}`}</div>
-          <div className="employer">{employer}</div>
+          <div className="employer">{employer ? employer : 'n/a'}</div>
 
           <div className="card-about">
             <div id="email">Email</div>
             <div className="email" aria-labelledby="email">
-              {email}
+              {email ? email : 'n/a'}
             </div>
             <div id="phone">Phone</div>
             <div className="phone" aria-labelledby="phone">
-              {phone}
+              {phone ? phone : 'n/a'}
             </div>
             <div id="address">Address</div>
             <div className="address" aria-labelledby="address">
-              {address}
+              {address ? address : 'n/a'}
             </div>
             <div id="balance">Balance</div>
             <div className="balance" aria-labelledby="balance">
-              {balance}
+              {balance ? balance : 'n/a'}
             </div>
             <div id="credit">Credit</div>
             <div className="credit" aria-labelledby="credit">
-              {credit}
+              {credit ? credit : 'n/a'}
             </div>
             <div id="rating">Mortgage Rating</div>
             <div className={`rating ${ratingColor}`} aria-labelledby="rating">
-              {mortgageRating}
+              {mortgageRating ? mortgageRating : 'n/a'}
             </div>
           </div>
 
           <div className="comments">
             <b>Comments: </b>
-            {comments}
+            {comments ? comments : 'n/a'}
           </div>
         </div>
       </div>
